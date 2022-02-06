@@ -25,7 +25,7 @@ android {
     defaultConfig {
         applicationId "com.example.android.wearable.alpha"
         minSdkVersion 28
-        targetSdkVersion 30
+        targetSdkVersion 32
         versionCode 1
         versionName "1.0"
     }
@@ -40,10 +40,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
     packagingOptions {
-        exclude 'META-INF/atomicfu.kotlin_module'
+        resources {
+            excludes += ['META-INF/atomicfu.kotlin_module']
+        }
     }
+
 
     compileOptions {
         sourceCompatibility = 1.8

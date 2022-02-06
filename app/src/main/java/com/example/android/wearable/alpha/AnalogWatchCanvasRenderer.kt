@@ -264,9 +264,11 @@ class AnalogWatchCanvasRenderer(
 
     // ----- All drawing functions -----
     private fun drawComplications(canvas: Canvas, zonedDateTime: ZonedDateTime) {
-        for ((_, complication) in complicationSlotsManager.complicationSlots) {
-            if (complication.enabled) {
-                complication.render(canvas, zonedDateTime, renderParameters)
+        if(renderParameters.drawMode != DrawMode.AMBIENT) {
+            for ((_, complication) in complicationSlotsManager.complicationSlots) {
+                if (complication.enabled) {
+                    complication.render(canvas, zonedDateTime, renderParameters)
+                }
             }
         }
     }
