@@ -1,14 +1,10 @@
-Alpha WatchFace Sample (Kotlin)
+Checkpoint Wear OS watchface
 ===============================
-Demonstrates watch faces using the new androidX alpha libraries (Kotlin).
+A Wear OS watch faces using androidX libraries (Kotlin).
 
 Introduction
 ------------
-With the release of the androidX alpha watch face libraries (late 2020), Wear OS has simplified
-watch face development.
 
-This sample gives you an early preview of how you can simplify your development with the new 100%
-Kotlin libraries.
 
 Steps to build in Android Studio
 --------------------------------
@@ -22,9 +18,6 @@ allow you to successfully install the watch face on the Wear device.
 When installed, you will need to select the watch face in the watch face picker, i.e., the watch
 face will not launch on its own like a regular app.
 
-For more information, check out our code lab:
-[1]: https://codelabs.developers.google.com/codelabs/watchface/index.html
-
 Screenshots
 -------------
 
@@ -37,11 +30,3 @@ use "Import Project" in Android Studio.
 
 Support
 -------
-
-- Stack Overflow: http://stackoverflow.com/questions/tagged/android
-
-If you've found an error in this sample, please file an issue:
-https://github.com/android/wear-os-samples
-
-Patches are encouraged, and may be submitted by forking this project and
-submitting a pull request through GitHub. Please see CONTRIBUTING.md for more details.
